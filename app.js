@@ -21,7 +21,7 @@ const passport = require('passport');
 const helmet = require('helmet');
 const MongoStore = require('connect-mongo')(session);
 const mongoSanitize = require('express-mongo-sanitize');
-const dbUrl = process.env.dbUrl ;
+const dbUrl = process.env.dbUrl||'mongodb://localhost:27017/yelp-camp' ;
 //'mongodb://localhost:27017/yelp-camp'
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
