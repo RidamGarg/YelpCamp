@@ -20,14 +20,13 @@ module.exports.addNewCampground = async(req,res)=>{
         limit: 1
       }).send()
     const campground = new Campground(req.body.campground);
-    const img = req.files.map(f=>({url:f.path,filename:f.filename}));
-    campground.images.push(...img);
+    campground.images=req.files.map(f=>({url:f.path,filename:f.filename}));
     campground.geometry = geoData.body.features[0].geometry ;
     campground.author = req.user._id ;
     await campground.save();
     
     req.flash('success','Created a new Campground');
-    res.redirect('/campgrounds');
+    res.redirect(`/campgrounds/${campground._id}`);
 }
 module.exports.showCampground = async(req,res)=>{
     const campground = await Campground.findById(req.params.id).populate({
