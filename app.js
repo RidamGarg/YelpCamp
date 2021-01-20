@@ -56,11 +56,11 @@ const sessionConfig = {
 }
 app.engine('ejs',ejsMate);
 app.set('view engine','ejs');
-app.use(methodOverride('_method'))
 app.set('views',path.join(__dirname,'views'));
 app.use(express.urlencoded({extended:true}));
-app.use(mongoSanitize());//aplicable on only query strings
+app.use(methodOverride('_method'))
 app.use(express.static(path.join(__dirname,'public')))
+app.use(mongoSanitize());//aplicable on only query strings
 app.use(session(sessionConfig));
 app.use(flash());
 app.use(helmet());
@@ -130,7 +130,7 @@ app.use('/campgrounds/:id/reviews',reviewRouter);
 app.use('/',userRouter);
 
 app.all('*',(req,res,next)=>{
-    next(new ExpressError('Page Not Found',400))
+ next(new ExpressError('Page Not Found',400))
 })
 app.use((err,req,res,next)=>{
     const{statusCode=500}=err;

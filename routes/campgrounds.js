@@ -12,7 +12,7 @@ router.route('/')
 .get(campgrounds.index)
  .post(isLoggedin,upload.array('image'),ValidateCampground,catchAsync(campgrounds.addNewCampground))
 
-router.get('/new',isLoggedin,catchAsync(campgrounds.renderNewForm))
+router.get('/new',isLoggedin,campgrounds.renderNewForm)
 router.route('/:id')
 .get(catchAsync(campgrounds.showCampground))
 .put(isLoggedin,isAuthor,upload.array('image'),ValidateCampground,catchAsync(campgrounds.updateCampground))

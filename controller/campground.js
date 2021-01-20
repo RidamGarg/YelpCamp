@@ -13,7 +13,7 @@ module.exports.renderNewForm = (req,res)=>{
 }
 module.exports.addNewCampground = async(req,res)=>{
     if(!req.body.campground){
-        throw next(new ExpressError('Invalid Campground Data',404));
+        return next(new ExpressError('Invalid Campground Data',404));
     }
     const geoData = await geoCoder.forwardGeocode({
         query: req.body.campground.location,
