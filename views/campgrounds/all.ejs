@@ -1,0 +1,32 @@
+    <% layout('./layouts/boilerplate') %> 
+    
+ <div id="cluster-map" style="width:100%; height: 500px;"></div>
+    <div>
+    <h1 class="text-center my-4">Campgrounds</h1>
+ 
+    <% for(let campground of campgrounds){ %> 
+          <div class="card mb-3">
+              <div class="row">
+                  <div class="col-4">
+                      <% if(campground.images.length) {%>
+                        <img src="<%= campground.images[0].url %>" alt="" class="img-fluid">
+                        <% }else{ %>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png" alt="" class="img-fluid">
+                            <% } %>   
+                  </div>
+                  <div class="col-8 card-body">
+                    <h5 class="card-title"><%= campground.title %></h5>
+                    <h6 class="card-subtitle mb-2 text-light"><%= campground.location %></h6>
+                    <p class="card-text"><%= campground.description %></p>
+                     <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">View <%= campground.title %></a>
+                     <!-- <a href="/campgrounds/<%= campground._id %>/edit" class="btn btn-secondary">Edit</a> -->
+                  </div>
+              </div>
+          </div>
+        <% } %> 
+    </div>
+<script>
+     const mapToken = '<%- process.env.Mapbox_Token %>'
+     const campgrounds = {features:<%- JSON.stringify(campgrounds) %>}//Remember as Json.stringify is outter function thats why - is used and we simply not use campground as in other file the refrence is stored not the value = is not used because it is js
+</script>
+<script src="/js/ClusterMap.js"></script>

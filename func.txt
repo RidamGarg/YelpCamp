@@ -1,0 +1,1 @@
+in <%=%> html is escaped but in <%- %> html is not escaped
