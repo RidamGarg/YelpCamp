@@ -3,7 +3,7 @@ Open App using [https://yelp-camp3.herokuapp.com/](https://yelp-camp3.herokuapp.
 
 What's this project about?
 
-It's an web app where user can explore the campgrounds shared by other users and comment on them.User can also share their campgrounds and even update and delete them.In addition to information user can also add multiple images of their campground.There is also a map placed on each campground according to the location shared by the user.There is a world map placed on the first page where a user can select campground according to thier area preference. 
+It's an web app where user can explore the campgrounds shared by other users and comment on them.User can also share their campgrounds and even update and delete them.In addition to information about campground user can also add multiple images of their campground.There is also a map placed on each campground according to the location shared by the user.There is a world map placed on the first page where a user can select campground according to thier area preference. 
 
 For front-end, following tech stack were used:
 1) HTML
