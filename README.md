@@ -19,3 +19,7 @@ For back-end, following tech stack were used:
 3) Passport.js
 4) Mongo DB
 5) Mongoose ODM
+
+- Seamless landing page
+
+<img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683280363/Screenshot_2083_rrhugb.png">
