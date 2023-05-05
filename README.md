@@ -28,6 +28,9 @@ For back-end, following tech stack were used:
 
 <img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683280360/Screenshot_2084_qcdmby.png">
 
+<img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683281316/Screenshot_2092_pi5tu8.png">
+
+
 - User can add his/her new Campground Page
  
 <img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683280360/Screenshot_2089_ibsmw8.png">
@@ -39,6 +42,7 @@ For back-end, following tech stack were used:
 - Single Campground Detail Page
 
 <img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683280361/Screenshot_2086_dvehni.png">
+
 <img width="958" alt="image" src="https://res.cloudinary.com/dionb6owj/image/upload/v1683281023/Screenshot_2090_lwzsg6.png">
 
 
