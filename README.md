@@ -1,5 +1,5 @@
 # YelpCamp
-Open App using [https://yelpcamp-o6sr.onrender.com/](https://yelp-camp3.herokuapp.com/)
+Open App using [https://yelpcamp-o6sr.onrender.com/](https://yelpcamp-o6sr.onrender.com/)
 
 What's this project about?
 
